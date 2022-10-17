@@ -1,0 +1,1 @@
+Este projeto é a conclusão de aprendizados do módulo II, desenvolvido para a Resilia Educação em parceria com o SENAC. Nele, desenvolvemos um site com o objetivo de ajudar no dia a dia com programação.
