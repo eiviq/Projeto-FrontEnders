@@ -1,0 +1,916 @@
+/*Fonte Roboto Mono*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+/*Reset CSS*/
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+* {
+    padding:0;
+    margin:0;
+    vertical-align:baseline;
+    list-style:none;
+    border:0
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+html{
+    height: 100vh;
+    scroll-behavior: smooth;
+}
+
+
+
+/*Navbar*/
+#m-nav{
+    background-color: #969ba2;
+}
+
+#m-btn-nav{
+    background-color: #A5BEFA; 
+    border-color: #0074b4; 
+    color: #0074b4;
+}
+
+#m-btn-nav:hover{
+    color: #969ba2;
+    background-color: #E2E1E1;
+    border-color: #969ba2;
+}
+
+/*Carrossel*/
+.imagem-carrossel{
+    object-fit: cover;
+    object-position: 0 80%;
+    height: 400px;
+}
+
+/*Cards*/
+.card-receita{
+    border-color: darkred;
+}
+
+.cor-botao{
+    color: white;
+    background-color: darkred;
+}
+
+.card-posicao-imagem{
+    object-fit: cover;
+    height: 200px;
+}
+
+.card-largura{
+    max-width: 20rem;
+}
+
+*{
+margin: 0;
+padding:0;
+
+}
+
+/* -------------------------- Responsividade 1920px --------------------- */
+
+@media screen and (max-width: 1920px) {
+    .container {
+      margin: 1em 2em;
+    }
+
+/* alterações do título "conheça nossa equipe" */
+
+.v-titulo{
+    display: flex;
+    background-color: rgba(222, 221, 221, 0.808);
+    font-family: 'Mulish', sans-serif;
+    font-size: 5rem;
+    width: 100%;
+    height: 10rem;
+    margin-left: 2rem ;
+    margin-top: 5rem;
+    padding: 0;
+
+}
+
+    .v-titulo h1{
+        font-size: 6rem;
+
+    }
+    
+    /*  container p/ cards */
+    .v-container-contato{
+        display: flex;
+        width: 70vw;
+        height: 40rem;
+        justify-content: space-around;
+        text-align: center;
+        margin-left: 14rem;
+        font-family: 'Mulish', sans-serif;
+    
+    }
+    
+    /* config individual imagens/contato */
+    
+    #v-primeiro-icon{
+        display: flex;
+        border-radius: 100%;
+        overflow: hidden;
+        height: 20rem;
+        width: 20rem;
+        margin-top: 5rem;
+    }
+    
+    #v-segundo-icon{
+        display: flex;
+        border-radius: 100%;
+        overflow: hidden;
+        height: 20rem;
+        width: 20rem;
+        margin-top: 5rem;
+    }
+    
+    #v-terceiro-icon{
+        display: flex;
+        border-radius: 100%;
+        overflow: hidden;
+        height: 20rem;
+        width: 20rem;
+        margin-top: 5rem;
+    }
+    
+    #v-quarto-icon{
+        display: flex;
+        border-radius: 100%;
+        overflow: hidden;
+        height: 20rem;
+        width: 20rem;
+        margin-top: 5rem;
+    }  
+    
+    /* formulario personalizado c/ efeito linha unica */
+    
+    form{
+        width: 100%;
+        max-width: 350px;
+    }
+    
+    div.single-input{
+        width: 100%;
+        margin:30px 0;
+        position: relative;
+    }
+    
+    div.single-input label{
+        font-family: 'Roboto', sans-serif;
+        font-size: 16px;
+        position: absolute;
+        left: 0;
+        bottom: 5px;
+        color:grey;
+        cursor: text;
+        transition: 0.5s ease-in-out;
+    }
+    
+    div.single-input .input{
+        width: 100%;
+        padding: 5px;
+        color: rgb(150, 150,150);
+        border:0;
+        border-bottom: 2px solid grey;
+        outline: 0;
+    }
+    
+    .single-input .input:focus,
+    .single-input .input:valid{
+        font-family: 'Roboto', sans-serif;
+        border-bottom: 2px solid cornflowerblue;
+    
+    }
+    
+    .single-input .input:focus ~ label,
+    .single-input .input:valid ~ label{
+        font-family: 'Roboto', sans-serif;
+        transform: translateY(-24px);
+        font-size: 15px;
+        color: cornflowerblue;
+    }
+    
+    /* finalização config formulario personalizado */
+
+    /* outras configs form */
+    
+    input, textarea {
+        font-family: 'Mulish', sans-serif;
+        width: 95%;
+        padding: 10px;
+        margin-right: 1em;
+        font: 1em;
+        border: 1px solid black;
+    
+    }
+
+    /* container englobando todo form */
+
+    .v-form-container{
+        display: flex;
+        height: 25rem;
+        margin-left: 20rem;   
+    
+    }
+
+    /* container englobando o titulo, label e input */
+    
+    .v-input-container{
+        display: flex;
+        flex-direction: column;
+        width: 20rem;
+        margin-right: 5rem;
+        
+    }
+
+    /* div do h1  */
+    
+    .v-form-text{
+        font-family: 'Roboto', sans-serif;
+
+    }
+
+    /* div da msg */
+
+    .v-form-mensagem{
+        display: flex;
+        flex-direction: column;
+        width: 30rem;
+        margin-left: 5rem;
+        margin-top: -1rem;
+    }
+    
+    #v-text-label{
+        font-family: 'Mulish', sans-serif;
+        font-size: 2rem;
+        margin-bottom: 2rem;
+        font-weight: bold;
+    }
+    
+    /*  configs botão */
+
+    #v-btn-msg{
+        font-family: 'Roboto', sans-serif;
+        font-weight: bold;
+        height: 3rem;
+        width: 28.5rem;
+    }
+    
+    /*  footer | Vicky */
+    
+    #footer-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        
+    }
+    
+    #footer{
+        color: rgb(0, 0, 0);
+        font-weight: normal;
+        background: rgba(226, 225, 225, 0.678);
+    }
+    /* INSERIR MOD LOGO */
+    .logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logo img{
+        width: 10rem;
+        height: 10rem;
+
+    }
+    
+    /* Estilização de textos | Vicky */
+    #footer h5{
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.25rem;
+     margin-top: 1rem;     
+     margin-bottom: 0;
+     margin-left: 9rem;
+        
+    }
+
+
+    #footer a{
+        color: rgb(0, 0, 0);
+        font-family: 'Roboto', sans-serif;
+        font-size: 15px;
+        text-decoration: none;
+        margin-right: 1rem;
+    }
+    
+    .social h3{
+        margin-top: 1rem;
+        font-family: 'Roboto', sans-serif;
+        font-size: 1rem;
+    }
+    
+    .footer-copyright p{
+        color: white;
+        font-family: 'Roboto', sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    
+    /*  Estilização listas | Vicky */
+    #footer ul{
+        list-style-type: none;
+        padding-left: 0;
+        margin-left: 10rem;
+    }
+    
+    .social{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    
+    /*  Tamanho dos icons | Vicky */
+
+
+    .social img{
+        height: 2rem;
+    
+    }
+    
+    /*  Estilização copyright | Vicky */
+    .footer-copyright{
+        background: rgb(56,57,57);
+        background: radial-gradient(circle, rgba(56,57,57,1) 0%, rgba(0,0,0,1) 100%);
+        text-align: center;
+        justify-content: center;
+    }
+    }
+
+    /* -----------------------Responsividade 1400---------------------------- */
+
+    @media screen and (max-width: 1400px) {
+
+
+        .container {
+          margin: 1em 2em;
+        }
+
+
+        
+/* alterações do título "conheça nossa equipe" */
+
+.v-titulo{
+    display: flex;
+    background-color: rgba(222, 221, 221, 0.808);
+    font-family: 'Mulish', sans-serif;
+    font-size: 5rem;
+    width: 98vw;
+    height: 10rem;
+    margin-left: 2rem ;
+    margin-top: 5rem;
+    padding: 0;
+
+}
+
+    .v-titulo h1{
+        font-size: 6rem;
+
+    }
+    
+    /*  container p/ cards */
+    .v-container-contato{
+        display: flex;
+        width: 70vw;
+        height: 40rem;
+        justify-content: space-around;
+        text-align: center;
+        margin-left: 14rem;
+        font-family: 'Mulish', sans-serif;
+    
+    }
+    
+    /* config individual imagens/contato */
+    
+    #v-primeiro-icon{
+        display: flex;
+        border-radius: 100%;
+        overflow: hidden;
+        height: 20rem;
+        width: 20rem;
+        margin-top: 5rem;
+    }
+    
+    #v-segundo-icon{
+        display: flex;
+        border-radius: 100%;
+        overflow: hidden;
+        height: 20rem;
+        width: 20rem;
+        margin-top: 5rem;
+    }
+    
+    #v-terceiro-icon{
+        display: flex;
+        border-radius: 100%;
+        overflow: hidden;
+        height: 20rem;
+        width: 20rem;
+        margin-top: 5rem;
+    }
+    
+    #v-quarto-icon{
+        display: flex;
+        border-radius: 100%;
+        overflow: hidden;
+        height: 20rem;
+        width: 20rem;
+        margin-top: 5rem;
+    }  
+    
+    /* formulario personalizado c/ efeito linha unica */
+    
+    form{
+        width: 100%;
+        max-width: 350px;
+    }
+    
+    div.single-input{
+        width: 100%;
+        margin:30px 0;
+        position: relative;
+    }
+    
+    div.single-input label{
+        font-family: 'Roboto', sans-serif;
+        font-size: 16px;
+        position: absolute;
+        left: 0;
+        bottom: 5px;
+        color:grey;
+        cursor: text;
+        transition: 0.5s ease-in-out;
+    }
+    
+    div.single-input .input{
+        width: 100%;
+        padding: 5px;
+        color: rgb(150, 150,150);
+        border:0;
+        border-bottom: 2px solid grey;
+        outline: 0;
+    }
+    
+    .single-input .input:focus,
+    .single-input .input:valid{
+        font-family: 'Roboto', sans-serif;
+        border-bottom: 2px solid cornflowerblue;
+    
+    }
+    
+    .single-input .input:focus ~ label,
+    .single-input .input:valid ~ label{
+        font-family: 'Roboto', sans-serif;
+        transform: translateY(-24px);
+        font-size: 15px;
+        color: cornflowerblue;
+    }
+    
+    /* finalização config formulario personalizado */
+
+    /* outras configs form */
+    
+    input, textarea {
+        font-family: 'Roboto', sans-serif;
+        width: 95%;
+        padding: 10px;
+        margin-right: 1em;
+        font: 1em;
+        border: 1px solid black;
+    
+    }
+
+    /* container englobando todo form */
+
+    .v-form-container{
+        display: flex;
+        height: 25rem;
+        margin-left: 15rem;   
+    
+    }
+
+    /* container englobando o titulo, label e input */
+    
+    .v-input-container{
+        display: flex;
+        flex-direction: column;
+        width: 20rem;
+        margin-right: 5rem;
+        
+    }
+
+    /* div do h1  */
+    
+    .v-form-text{
+        font-family: 'Roboto', sans-serif;
+
+    }
+
+    /* div da msg */
+
+    .v-form-mensagem{
+        display: flex;
+        flex-direction: column;
+        width: 30rem;
+        margin-left: 5rem;
+        margin-top: -1rem;
+    }
+    
+    #v-text-label{
+        font-family: 'Mulish', sans-serif;
+        font-size: 2rem;
+        margin-bottom: 2rem;
+        font-weight: bold;
+    }
+    
+    /*  configs botão */
+
+    #v-btn-msg{
+        font-family: 'Roboto', sans-serif;
+        font-weight: bold;
+        height: 3rem;
+        width: 28.5rem;
+    }
+    
+    /*  footer | Vicky */
+    
+    #footer-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+
+    }
+    
+    #footer{
+        color: rgb(0, 0, 0);
+        font-weight: normal;
+        background: rgba(226, 225, 225, 0.678);
+    }
+
+    .logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logo img{
+        width: 10rem;
+        height: 10rem;
+
+    }
+    
+    /* Estilização de textos | Vicky */
+    #footer h5{
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.25rem;
+     margin-top: 1rem;     
+     margin-bottom: 0;
+     margin-left: 7rem;
+        
+    }
+
+
+    #footer a{
+        color: rgb(0, 0, 0);
+        font-family: 'Roboto', sans-serif;
+        font-size: 15px;
+        text-decoration: none;
+        margin-right: 1rem;
+    }
+    
+    .social h3{
+        margin-top: 1rem;
+        font-family: 'Roboto', sans-serif;
+        font-size: 1rem;
+    }
+    
+    .footer-copyright p{
+        color: white;
+        font-family: 'Roboto', sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    
+    /*  Estilização listas | Vicky */
+    #footer ul{
+        list-style-type: none;
+        padding-left: 0;
+        margin-left: 8rem;
+    }
+    
+    .social{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    
+    /*  Tamanho dos icons | Vicky */
+
+
+    .social img{
+        height: 2rem;
+    
+    }
+    
+    /*  Estilização copyright | Vicky */
+    .footer-copyright{
+        background: rgb(56,57,57);
+        background: radial-gradient(circle, rgba(56,57,57,1) 0%, rgba(0,0,0,1) 100%);
+        text-align: center;
+        justify-content: center;
+    }
+
+    }
+    /* ----------------------responsividade 460 -------------------------*/
+    @media screen and (max-width: 460px) {
+        .container {
+          margin: 1em 2em;
+        }
+
+        /* alterações do título "conheça nossa equipe" */
+
+.v-titulo{
+    display: flex;
+    background-color: rgba(222, 221, 221, 0.808);
+    font-family: 'Mulish', sans-serif;
+    font-size: 2rem;
+    width: 96vw;
+    height: 7rem;
+    margin-left: 1rem;
+    margin-top: 5rem;
+    padding: 0;
+
+}
+
+    .v-titulo h1{
+        font-size: 2.5rem;
+
+    }
+    
+    /*  container p/ cards */
+    .v-container-contato{
+        display: flex;
+        width: 50vw;
+        height: 100%;
+        flex-direction: column;
+        margin-bottom: 5rem;
+        margin-left: 120px;
+        font-family: 'Mulish', sans-serif;
+    
+    }
+    
+    /* config individual imagens/contato */
+    
+    #v-primeiro-icon{
+        display: flex;
+        border-radius: 100%;
+        overflow: hidden;
+        height: 13rem;
+        width: 13rem;
+    }
+    
+    #v-segundo-icon{
+        display: flex;
+        border-radius: 100%;
+        overflow: hidden;
+        height: 13rem;
+        width: 13rem;
+    }
+    
+    #v-terceiro-icon{
+        display: flex;
+        border-radius: 100%;
+        overflow: hidden;
+        height: 13rem;
+        width: 13rem;
+    }
+    
+    #v-quarto-icon{
+        display: flex;
+        border-radius: 100%;
+        overflow: hidden;
+        height: 13rem;
+        width: 13rem;
+    }  
+    
+    /* formulario personalizado c/ efeito linha unica */
+    
+    form{
+        width: 100%;
+        max-width: 350px;
+    }
+    
+    div.single-input{
+        width: 100%;
+        margin:30px 0;
+
+    }
+    
+    div.single-input label{
+        font-family: 'Roboto', sans-serif;
+        font-size: 16px;
+        position: absolute;
+        left: 0;
+        bottom: 5px;
+        color:grey;
+        cursor: text;
+        transition: 0.5s ease-in-out;
+    }
+    
+    div.single-input .input{
+        width: 100%;
+        padding: 5px;
+        color: rgb(150, 150,150);
+        border:0;
+        border-bottom: 2px solid grey;
+        outline: 0;
+    }
+    
+    .single-input .input:focus,
+    .single-input .input:valid{
+        font-family: 'Roboto', sans-serif;
+        border-bottom: 2px solid cornflowerblue;
+    
+    }
+    
+    .single-input .input:focus ~ label,
+    .single-input .input:valid ~ label{
+        font-family: 'Roboto', sans-serif;
+        transform: translateY(-24px);
+        font-size: 15px;
+        color: cornflowerblue;
+    }
+    
+    /* finalização config formulario personalizado */
+
+    /* outras configs form */
+    
+    input, textarea {
+        font-family: 'Roboto', sans-serif;
+        width: 95%;
+        padding: 10px;
+        margin-right: 1em;
+        font: 1em;
+        border: 1px solid black;
+    
+    }
+
+    /* container englobando todo form */
+
+    .v-form-container{
+        display: flex;
+        flex-direction: column;
+        height: 20rem;
+        margin-left: 20px;        
+    }
+
+    /* container englobando o titulo, label e input */
+    
+    .v-input-container{
+        display: flex;
+        flex-direction: column;
+        width: 20rem;        
+    }
+
+    /* div do h1  */
+    
+    .v-form-text{
+        font-family: 'Roboto', sans-serif;
+
+    }
+
+    /* div da msg */
+
+    .v-form-mensagem{
+        display: flex;
+        width: 50vh;
+        margin-left: 0;
+        
+    }
+    
+    #v-text-label{
+        font-family: 'Mulish', sans-serif;
+        font-size: 2rem;
+        font-weight: bold;
+    }
+    
+    /*  configs botão */
+
+    #v-btn-msg{
+        font-family: 'Roboto', sans-serif;
+        font-weight: bold;
+        height: 3rem;
+        width: 24rem;
+    }
+    
+    /*  CONFIG GERAL DO FOOTER | Vicky */
+    
+    #footer-container{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+       justify-content: space-around; 
+        margin-top: 20rem;
+    }
+    
+    #footer{
+        color: rgb(0, 0, 0);
+        font-weight: normal;
+        background: rgba(226, 225, 225, 0.678);
+        width: 100%;
+    }
+    /* INSERIR MOD LOGO */
+    .logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logo img{
+        width: 80px;
+        height: 80px;
+        margin-top: 1rem;
+
+    }
+    
+    /* Estilização de textos | Vicky */
+    #footer h5{
+        font-family: 'Roboto', sans-serif;
+        font-size: 20px;
+     flex-direction: column;
+     margin-left: 6rem;
+    }
+
+
+    #footer a{
+        color: rgb(0, 0, 0);
+        font-family: 'Roboto', sans-serif;
+        font-size: 13px;
+        text-decoration: none;
+        margin-left: 1rem;
+    }
+    
+    .social h3{
+        margin-top: 1rem;
+        font-family: 'Roboto', sans-serif;
+        font-size: 1rem;
+    }
+    
+    .footer-copyright p{
+        color: white;
+        font-family: 'Roboto', sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    
+    /*  Estilização listas | Vicky */
+    #footer ul{
+        list-style-type: none;
+        padding-left: 0;
+    }
+    
+    .social{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    
+    /*  Tamanho dos icons | Vicky */
+
+
+    .social img{
+        height: 25px;
+        margin-bottom: 1rem;
+    
+    }
+    
+    /*  Estilização copyright | Vicky */
+    .footer-copyright {
+        background: rgb(56,57,57);
+        background: radial-gradient(circle, rgba(56,57,57,1) 0%, rgba(0,0,0,1) 100%);
+    }
+    }
