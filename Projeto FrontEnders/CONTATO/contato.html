@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="contato.css">
+
+    <!DOCTYPE html>
+    <html>
+    
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <title>The FrontEnders - SolutionHIT</title>
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      <link rel="stylesheet" type="text/css" href="Contato-CSS/contato.css">
+    </head>
+    
+    <body>
+    
+      <header>
+        <nav  id="m-nav" class="navbar navbar-expand-lg navbar-light fixed-top">
+          <a id="m-titulo-principal-navbar" class="navbar-brand" href="#">
+            <img src="../Imagens/navbar/imagem-fe.png" class="d-inline-block align-top" width="30px" height="30px">
+            The Front<span style="color:#0074b4;">Enders</span>
+          </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Página Inicial<span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Solution Hit
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Sobre</a>
+                  <a class="dropdown-item" href="#">Planos</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Cadastro</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contato</a>
+              </li>
+              <li class="nav-item">
+                <a id="m-btn-nav" class="nav-link btn my-2 my-sm-0" data-toggle="modal" data-target="#modal-contato" href="#">
+                  Login
+                  <img id="m-btn-nav-img" src="../Imagens/navbar/login-icon.png" class="d-inline-block align-top" width="30px" height="30px">
+                </a>
+                </li>
+            </ul>
+            </div>
+        </nav>  
+      </header>
+      
+      <main class="d-flex justify-content-center align-items-center ">
+    
+      
+        
+      <!-- Modal -->
+      <div class="modal fade" id="modal-contato" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <dialog class="modal-content">
+            <header class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </header>
+            <main class="modal-body">
+              <form>
+                <div class="form-group">
+                  <label for="formGroupExampleInput">Nome completo:</label>
+                  <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Insira seu nome completo">
+                </div>
+                <div class="form-group">
+                  <label for="exampleFormControlInput1">Endereço de e-mail:</label>
+                  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Insira seu e-mail nesse modelo: nome@exemplo.com">
+                </div>
+                <div class="form-group">
+                  <label for="exampleFormControlTextarea1">Deixe seu comentário:</label>
+                  <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Insira aqui seu comentário" rows="3"></textarea>
+                </div>
+              </form>
+            </main>
+            <footer class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+              <button type="button" class="btn cor-botao">Enviar</button>
+            </footer>
+          </dialog>
+        </div>
+      </div>
+    
+      </main>
+  
+<!-- inicio da pag de contato -->
+    <main class="v-contato">
+
+        <div class="v-titulo">
+            <h1> <span style="color: #0074b4;"> .</span>Conheça o nosso time<span style="color: #0074b4;">{ </span>
+            </h1>
+        </div>
+
+        <!-- CARDS DE IMAGENS E CONTATOS  -->
+
+        <div class="v-container-contato">
+
+            <div class="v-card-manu">
+
+                <div id="v-primeiro-icon">
+                    <img src="../Imagens/icons-equipe/manubw.jpg" id="icon1" onmouseover="over1();"
+                        onmouseout="out1();">
+                </div>
+
+                <h3> Manu Oliveira </h3>
+
+                <div id="v-manu-link">
+                    <a href="https://linkedin.com" class="manu-linkedin"><img
+                            src="../Imagens/icons/icon-linkedin.svg"></a>
+                    <a href="https://github.com/ogolipe" class="Github"><img src="../Imagens/icons/icon-github.svg"></a>
+                </div>
+            </div>
+
+            <div class="v-card-dai">
+
+                <div id="v-segundo-icon">
+                    <img src="../Imagens/icons-equipe/daibw.jpg" id="icon2" onmouseover="over2();" onmouseout="out2();">
+                </div>
+
+                <h3>Daiane Bezerra</h3>
+
+                <div id="v-dai-link">
+                    <a href="https://linkedin.com" class="dai-linkedin"><img
+                            src="../Imagens/icons/icon-linkedin.svg"></a>
+                    <a href="https://github.com/daiane1995" class="Github"><img
+                            src="../Imagens/icons/icon-github.svg"></a>
+                </div>
+
+            </div>
+
+            <div class="v-card-lucas">
+
+                <div id="v-terceiro-icon">
+                    <img src="../Imagens/icons-equipe/lucasbw.jpg" id="icon3" onmouseover="over3();"
+                        onmouseout="out3();">
+                </div>
+
+                <h3>Lucas Salustriano</h3>
+
+                <div id="v-lucas-link">
+                    <a href="https://www.linkedin.com/in/lucassalustriano/" class="lucas-linkedin"><img
+                            src="../Imagens/icons/icon-linkedin.svg"></a>
+                    <a href="https://github.com/lcsalustriano" class="Github"><img
+                            src="../Imagens/icons/icon-github.svg"></a>
+                </div>
+            </div>
+
+            <div class="v-card-vicky">
+
+                <div id="v-quarto-icon">
+                    <img src="../Imagens/icons-equipe/vickybw.jpg" id="icon4" onmouseover="over4();"
+                        onmouseout="out4();">
+                </div>
+
+                <h3>Victória de Carvalho</h3>
+
+                <div id="v-vicky-link">
+                    <a href="https://linkedin.com/eiviq" class="vicky-linkedin"><img
+                            src="../Imagens/icons/icon-linkedin.svg"></a>
+                    <a href="https://github.com/eiviq" class="Github"><img src="../Imagens/icons/icon-github.svg"></a>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- FORM DE CONTATO -->
+        <div class="v-form-container">
+            <div class="v-input-container">
+                <div class="v-form-text">
+                    <h1>Entre em Contato: </h1>
+                </div>
+        
+                <form action="">
+                    <div class="single-input">
+                        <input required type="text" name="" id="nome" class="input">
+                        <label for="nome">Nome:</label>
+                    </div>
+                </form>
+                <form action="">
+                    <div class="single-input">
+                        <input required type="text" name="" id="email" class="input">
+                        <label for="nome">E-mail:</label>
+                    </div>   
+                </form>
+            </div>
+
+             <div class="v-form-mensagem">
+                <label for="textareamensagem" id="v-text-label">Mensagem:</label>
+                <textarea name="textareamensagem" id="textareamensagem" cols="30" rows="10"></textarea>                
+                <button onclick="alerta()" id="v-btn-msg">Enviar mensagem</button>
+            </div>
+        </div>
+
+    </main>
+
+
+    <!-- FOOTER | VICKY -->
+
+
+    <footer id="footer">
+        <div id="footer-container">
+
+            <!-- INSERIR O LOGO | VICKY -->
+
+            <div class="logo">
+                <img src="../Imagens/footer/logo-footer-fe.png" alt="">
+            </div>
+
+            <!-- LINKS DO RODAPÉ | VICKY -->
+            <div class="v-inicio">
+                <h5>FRONTENDERS</h5>
+                <ul>
+                    <li><a href="#">Quem somos?</a></li>
+                    <li><a href="#">Nossa Missão</a></li>
+                    <li><a href="#">Nossa Equipe</a></li>
+                </ul>
+
+            </div>
+            <div class="v-serviços">
+                <h5>SERVIÇOS</h5>
+                <ul>
+                    <li><a href="#">Nossos Planos</a></li>
+                    <li><a href="#">Política de Privacidade</a></li>
+                    <li><a href="#">Política de Garantia</a></li>
+                    <li><a href="#">Formas de Pagamento</a></li>
+                    <li><a href="#">FAQs</a></li>
+                </ul>
+
+            </div>
+            <div class="v-suporte">
+                <h5>SUPORTE</h5>
+                <ul>
+                    <li><a href="#">Login</a></li>
+                    <li><a href="#">Redefinição de Senha</a></li>
+                    <li><a href="#">Contato</a></li>
+
+                    <li><a href="#">Trabalhe Conosco</a></li>
+
+                </ul>
+            </div>
+
+            <!--  REDES SOCIAIS -->
+            <div class="social">
+                <div class="titulo-social">
+                    <h3>ACOMPANHE NOSSAS REDES SOCIAIS</h3>
+                </div>
+                <div class="rede-social">
+                    <a href="https://twitter.com" class="twitter"><img src="../Imagens/icons/icon-twitter.svg"
+                            alt=""></a>
+                    <a href="https://linkedin.com" class="linkedin"><img src="../Imagens/icons/icon-linkedin.svg"
+                            alt=""></a>
+                    <a href="https://facebook.com" class="facebook"><img src="../Imagens/icons/icon-facebook.svg"
+                            alt=""></a>
+                    <a href="https://instagram.com" class="instagram"><img src="../Imagens/icons/icon-instagram.svg"
+                            alt=""></a>
+                    <a href="#" class="email"><img src="../Imagens/icons/icon-mail.svg" alt=""></a>
+                    <a href="https://github.com" class="Github"><img src="../Imagens/icons/icon-github.svg" alt=""></a>
+
+                </div>
+            </div>
+
+    </footer>
+    <div class="footer-copyright">
+        <p>© 2022 Copyright - FrontEnders</p>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>  
+</body>
+</html>
+    <script src="Contato-JS/contato.js"></script>
+</body>
+
+</html>
