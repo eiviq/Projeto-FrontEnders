@@ -56,88 +56,61 @@
     <div class="m-container-form">
         <h1>Cadastre-se:</h1>
     <hr>
-    <form class="container">
-        <div class="form-group row ">
-            <label for="inputName3" class="col-sm-2 col-form-label-sm">Nome</label>
-            <div class="col-sm-5">
-                <input type="name" class="form-control form-control-sm" id="inputname3">
+    <form>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="inputName3">Nome:</label>
+            <input type="name" class="form-control form-control-sm" id="inputName3">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="inputEmail3">E-mail:</label>
+            <input type="email" class="form-control form-control-sm" id="inputEmail3">
             </div>
         </div>
-        <div class="form-group row">
-            <label for="inputEmail3" class="col-sm-2 col-form-label-sm">Email</label>
-            <div class="col-sm-5">
-                <input type="email" class="form-control form-control-sm" id="inputEmail3">
-            </div>
+        <div class="form-group">
+            <label for="inputPassword4">Senha</label>
+            <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
         </div>
-        <div class="form-group row">
-            <label for="inputPassword3" class="col-sm-2 col-form-label-sm">Senha</label>
-            <div  class="col-sm-5">
-                <input type="password" class="form-control form-control-sm" id="inputPassword3">
-            </div>
+        <div class="form-group confirme">
+            <label for="inputPassword4">Confirmar Senha</label>
+            <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
         </div>
-        <div class="form-group row confirme">
-            <label for="inputPassword3" class="col-sm-2 col-form-label-sm">Confirmar senha</label>
-            <div class="col-sm-5">
-                <input type="password" class="form-control form-control-sm" id="inputPassword2">
-            </div>
+        <div class="form-group cep">
+            <label for="inputCep3">CEP</label>
+          <input type="text" class="form-control form-control-sm" id="cep" onchange="visualizar()">
         </div>
-        <div class="form-group row">
-            <label for="inputRG3" class="col-sm-2 col-form-label-sm">RG</label>
-            <div  class="col-sm-5">
-                <input type="text" class="form-control form-control-sm" id="inputRG3">
-            </div>
-        </div>
-        <div class="form-row row container col-{breakpoint}-auto">
-        <div class="form-group row cep">
-            <label for="inputCep3 " >CEP</label>
-            <div  class="col-sm-7">
-                <input type="text" class="form-control form-control-sm" id="cep" onchange="visualizar()">
-            </div>
-        </div>
-        <div class="form-group row estado">
+        <div class="form-row">
+          <div class="form-group estado col-md-6">
             <label for="inputEstado3 " >Estado</label>
-            <div  class="col-sm-8">
-                <input type="text" class="form-control form-control-sm" id="estado">
-            </div>
-        </div>
-        <div class="form-group row cidade">
+            <input type="text" class="form-control" id="inputCity">
+          </div>
+          <div class="form-group cidade col-md-6">
             <label for="inputCidade3">Cidade</label>
-            <div  class="col-sm-8">
-                <input type="text" class="form-control form-control-sm" id="cidade" >
-            </div>
+            <input type="text" class="form-control form-control-sm" id="cidade" >
+          </div>
         </div>
-        <div class="form-group row Bairro">
+        <div class="form-row">
+          <div class="form-group Bairro col-md-6">
             <label for="inputBairro3" >Bairro</label>
-            <div  class="col-sm-8">
-                <input type="text" class="form-control form-control-sm" id="bairro">
-            </div>
+            <input type="text" class="form-control form-control-sm" id="bairro">
+          </div>
+          <div class="form-group rua col-md-6">
+            <<label for="inputCidade3">Rua</label>
+            <input type="text" class="form-control form-control-sm" id="rua">
+          </div>
         </div>
-        
-        <div class="form-group row rua">
-            <label for="inputRua3 " >Rua</label>
-            <div  class="col-sm-11">
-                <input type="text" class="form-control form-control-sm" id="rua">
-            </div>
-        </div>
-        <div class="form-group row numero">
+        <div class="form-row">
+          <div class="form-group numero col-md-6">
             <label for="inputNumero3" >Número</label>
-            <div  class="col-sm-7">
-                <input type="text" class="form-control form-control-sm" id="inputNumero3">
-            </div>
-        </div>
-        <div class="form-group row complemento">
+            <input type="text" class="form-control form-control-sm" id="inputNumero3">
+          </div>
+          <div class="form-group complemento col-md-6">
             <label for="inputComplemento3">Complemento</label>
-            <div  class="col-sm-7">
-                <input type="text" class="form-control form-control-sm" id="inputComplemento3">
-            </div>
+            <input type="text" class="form-control form-control-sm" id="inputComplemento3">
+          </div>
         </div>
-        
-    </div>
-        
         <button type="submit" class="btn btn-primary">Cadastrar</button>
-        </div>
-        </div>
-    </form>
+      </form>
     </div>
   </main>
 
@@ -203,7 +176,7 @@
   <div class="footer-copyright">
     <p id="m-footer-copyright-p">© 2022 Copyright - Solution HIT</p>
   </div>  
-
+</body>
 </script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>

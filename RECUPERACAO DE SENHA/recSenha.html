@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>The FrontEnders - SolutionHIT</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="login-css/style.css">
+  <link rel="stylesheet" type="text/css" href="recsenha-css/style.css">
 </head>
 
 <body>
@@ -40,6 +40,12 @@
           <li class="nav-item">
             <a class="nav-link" href="../CONTATO/contato.html">Contato</a>
           </li>
+          <li class="nav-item">
+            <a id="m-btn-nav" class="nav-link btn my-2 my-sm-0" href="../LOGIN/login.html">
+              Login
+              <img id="m-btn-nav-img" src="./Imagens/navbar/login-icon.png" class="d-inline-block align-top" width="30px" height="30px">
+            </a>
+            </li>
         </ul>
         </div>
     </nav>  
@@ -50,25 +56,25 @@
   <div class="m-container-form flex-column d-flex justify-content-center align-items-center ">
 
     <img class="m-logo-login" src="./Imagens/navbar/imagem-fe.png" alt="Logo the FrontEnders">
-    <form name="formulario">
-      <div class="form-group">
-        <label for="exampleInputEmail1">Endereço de e-mail</label>
-        <input  type="email" name="email" onblur="validacaoEmail(formulario.email)" class="form-control" id="input-email" aria-describedby="emailHelp" placeholder="Seu e-mail">
-        <small id="emailMsg" class="form-text text-muted"></small>
-      </div>
-      <div class="form-group">
-        <label for="exampleInputPassword1">Senha</label>
-        <input type="password" class="form-control" id="m-input-senha" placeholder="Senha">
-      </div>
-      <div id="div-botao-email">
-        <button name="botaoEmail" id="botao-email" type="submit" class="btn btn-primary">Entrar</button>
-      </div>
-      <a href="../RECUPERACAO DE SENHA/recSenha.html">Esqueceu sua senha?</a>
-    </form>
+    <h3>Recuperação de Senha</h3>
+    <br>
+
+   <form class="container flex-column d-flex justify-content-center align-items-center">
+       
+       <div class="form-group row recsenha d-flex align-items-center justify-content-center">
+           <label id="d-label-input" for="inputEmail3">Email:</label>
+           <div class="d-container-input row col-sm-4">
+               <input type="email" class="form-control form-control-sm" id="inputEmail4">
+           </div> 
+       </div>
+
+       <button type="submit" class="btn btn-primary" onclick="msgConfirm()">Enviar</button>
+       </div>
+       </div>
+   </form>
 
   </div>
     
-
   </main>
 
   <!-- FOOTER ? VICKY -->
@@ -139,7 +145,11 @@
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
-  <script src="login-js/verificaEmail.js"></script>
+  <script>
+    const msgConfirm = function(){
+       alert("Email para recuperação de senha enviado!")
+    }
+   </script>
 
 </body>
 </html>
