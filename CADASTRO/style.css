@@ -1,98 +1,73 @@
+/*Fonte Roboto Mono*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
 
-*{
-    font-family: 'Roboto Condensed', sans-serif;
-    font-family: 'Roboto Mono', monospace;
-}
-body{
-    background-color: #acbfb7;
-}
-.row{
-    margin-right: 0;
-    margin-left: 2%;
-}
-h1{
-    margin-left: 2%;
-    font-weight: bold;
-}
-.btn-primary{
-    margin-left: 15%;
+/*Reset CSS*/
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+* {
+    padding:0;
+    margin:0;
+    vertical-align:baseline;
+    list-style:none;
+    border:0
 }
 
-.Bairro, .complemento, .cidade, .cep, .rua, .numero, .estado {
-    display: flex;
-    flex-direction: column;
-    margin-left: 0;
-}
-.numero{
-    width: 15%;
-}
-.cep{
-    width: 25%;
-}
-.estado{
-    width: 25%;
-}
-.cidade{
-    width: 25%;
-}
-.Bairro{
-    width: 25%;
-}
-.rua{
-    width: 62%;
-}
-form{
-    border-radius: 1em;
-    padding: 20%; 
-    background-color: white;
-    left: 15px;
-    margin-bottom: 100px;
-   
-    
-}
-header{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-.btn{
-    margin-left: 45%;
-    background-color:#49708a;
-    border-color: #49708a;
-
-}
-.col-sm-2{
-    font-size: 16px;
-}
-.container{
-    padding: 1%;
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
 }
 
-.recsenha{
-    margin-left: 30%;
-    margin-top: 3%;
+html{
+    height: 100vh;
+    scroll-behavior: smooth;
 }
 
-#content{
-    height: 100%;
 
+
+/*Navbar*/
+#m-nav{
+    background-color: #969ba2;
+}
+
+#m-btn-nav-img{
+    width: 20px;
+    height: 20px;
+}
+
+#m-btn-nav{
+    background-color: #A5BEFA; 
+    border-color: #0074b4; 
+    color: #0074b4;
+}
+
+#m-btn-nav:hover{
+    color: #969ba2;
+    background-color: #E2E1E1;
+    border-color: #969ba2;
 }
 
 
 /*  footer | Vicky */
 
+#m-footer-copyright-p{
+    margin-bottom: 0;
+}
+
 #footer-container{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    
 }
 
 #footer{
     color: rgb(0, 0, 0);
     font-weight: normal;
     background: rgba(226, 225, 225, 0.678);
-    margin-top: 10px;
 }
 /* INSERIR MOD LOGO */
 .logo {
@@ -126,8 +101,6 @@ header{
 .footer-copyright p{
     color: white;
     font-family: 'Mulish', sans-serif;
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
 }
 
 /*  Estilização listas | Vicky */
@@ -156,18 +129,69 @@ header{
     justify-content: center;
 }
 
+/*Página de Email*/
 
-
-html{
-    height: 100%;
-
+main{
+    height: 100vh;
+    background-color: #0075b4;
 }
 
-body{
- display: flex;
- flex-direction: column;
- height: 100%;
- margin: 0;
- padding: 0;
+/*Login*/
+.m-logo-login{
+    width: 50px;
+    height: 50px;
+    margin-bottom: 30px;
+}
 
+#botao-email{
+    width: 100%;
+}
+
+.m-container-form{
+    height: 80%;
+    width: 90%;
+    background-color: white;
+    border-radius: 3px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding-bottom: 10px;
+    margin-top: 50px;
+}
+
+
+
+@media (max-width: 576px) {
+.logo{
+    padding-top: 10px;
+}
+
+.rede-social{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+footer div div a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.m-container-form{
+    height: 90%;
+    width: 80%;
+    background-color: white;
+}
+
+main{
+    height: 150vh;
+    background-color: #0075b4;
+}
 }
