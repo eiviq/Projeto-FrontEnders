@@ -222,51 +222,59 @@ html{
 
 
 @media (max-width: 576px) {
-.logo{
-    padding-top: 10px;
+    
+    .logo{
+        padding-top: 10px;
+    }
+
+    .rede-social{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    footer div div a{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    footer div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .m-container-form{
+        height: 60%;
+        width: 80%;
+        background-color: white;
+    }
+
+    .m-text-inicial-produto{
+        padding-right: 0px;
+    }
+
+    .m-img-inicial-pgproduto-container{
+        padding-left: 0px;
+    }
+
+    .m-planos-prod{
+        height: 100vh;
+    }
+
+    .m-prod-container-principal{
+        height: 380vh;
+        background-color: white;
+    }
+
 }
 
-.rede-social{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-}
-
-footer div div a{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-footer div{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.m-container-form{
-    height: 60%;
-    width: 80%;
-    background-color: white;
-}
-
-.m-text-inicial-produto{
-    padding-right: 0px;
-}
-
-.m-img-inicial-pgproduto-container{
-    padding-left: 0px;
-}
-
-.m-planos-prod{
-    height: 100vh;
-}
-
-.m-prod-container-principal{
-    height: 380vh;
-    background-color: white;
-}
-
+@media (device-height : 667px) and (device-width : 375px) {
+    .m-planos-prod{
+        height: 100vh;
+        padding-top: 100px;
+    }
 }
