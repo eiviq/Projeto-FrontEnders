@@ -100,7 +100,7 @@ html{
 
 .card-largura{
     max-width: 20rem;
-    height: 80%;
+    height: 60%;
 }
 
 /*  footer | Vicky */
@@ -239,6 +239,15 @@ html{
 
 
 
+@media (min-width: 768px) {
+    .m-prod-container-principal{
+        height: 350vh;
+        background-color: white;
+    }
+}
+
+
+
 @media (max-width: 576px) {
     
     .logo{
@@ -284,15 +293,22 @@ html{
     }
 
     .m-prod-container-principal{
-        height: 380vh;
+        height: 350vh;
         background-color: white;
     }
 
 }
 
+
+/*Iphone SE*/
 @media (device-height : 667px) and (device-width : 375px) {
     .m-planos-prod{
         height: 100vh;
         padding-top: 100px;
     }
+    .card-largura{
+        max-width: 20rem;
+        height: 80%;
+    }
+    
 }
