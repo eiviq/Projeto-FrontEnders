@@ -23,8 +23,8 @@ footer, header, hgroup, menu, nav, section {
 }
 
 html{
+    height: 100vh;
     scroll-behavior: smooth;
-    font-family: 'Roboto Mono', monospace;
 }
 
 
@@ -51,57 +51,6 @@ html{
     border-color: #969ba2;
 }
 
-/*Cards*/
-.m-planos-prod{
-    height: 100vh;
-}
-
-.card-title{
-    text-align: center;
-
-}
-
-.card-price{
-    text-align: center;
-    font-weight: normal;
-}
-
-.card-text{
-    text-align: center;
-
-}
-
-.m-card-plano{
-    border-radius: 5px;
-    box-shadow: 7px 7px 13px 0px rgba(50, 50, 50, 0.22);
-    padding: 30px;
-    margin: 20px;
-    width: 400px;
-    transition: all 0.3s ease-out;
-    border-top: 4px solid #0074b4;
-}
-
-.m-card-plano:hover {
-    transform: translateY(-5px);
-    cursor: pointer;
-  }
-
-.cor-botao{
-    display: flex;
-    color: white;
-    background-color: darkred;
-    justify-content: center;
-}
-
-.card-posicao-imagem{
-    object-fit:contain;
-    height: 200px;
-}
-
-.card-largura{
-    max-width: 20rem;
-    height: 80%;
-}
 
 /*  footer | Vicky */
 
@@ -180,41 +129,11 @@ html{
     justify-content: center;
 }
 
-/*Página do Produto*/
+/*Página de Email*/
 
-.m-prod-container-principal{
-    height: 200vh;
-    background-color: white;
-}
-
-.m-jumbo{
-    font-family: 'Roboto Mono', monospace;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0;
-    margin-top: 20px;
+main{
     height: 100vh;
-    
-}
-
-.m-title-pgprod{
-    font-weight: bolder;
-    color: #0074b4;
-}
-
-.m-jumbo-logo{
-    width: 150px;
-    height: 50px;
-    margin-bottom: 10px;
-}
-
-.m-text-inicial-produto{
-    padding-right: 100px;
-}
-
-.m-img-inicial-pgproduto-container{
-    padding-left: 100px;
+    background-color: #0075b4;
 }
 
 /*Login*/
@@ -229,70 +148,50 @@ html{
 }
 
 .m-container-form{
-    height: 55%;
-    width: 28%;
+    height: 80%;
+    width: 90%;
     background-color: white;
     border-radius: 3px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     padding-bottom: 10px;
+    margin-top: 50px;
 }
 
 
 
 @media (max-width: 576px) {
-    
-    .logo{
-        padding-top: 10px;
-    }
-
-    .rede-social{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-    }
-
-    footer div div a{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    footer div{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .m-container-form{
-        height: 60%;
-        width: 80%;
-        background-color: white;
-    }
-
-    .m-text-inicial-produto{
-        padding-right: 0px;
-    }
-
-    .m-img-inicial-pgproduto-container{
-        padding-left: 0px;
-    }
-
-    .m-planos-prod{
-        height: 100vh;
-    }
-
-    .m-prod-container-principal{
-        height: 380vh;
-        background-color: white;
-    }
-
+.logo{
+    padding-top: 10px;
 }
 
-@media (device-height : 667px) and (device-width : 375px) {
-    .m-planos-prod{
-        height: 100vh;
-        padding-top: 100px;
-    }
+.rede-social{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+footer div div a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.m-container-form{
+    height: 90%;
+    width: 80%;
+    background-color: white;
+}
+
+main{
+    height: 150vh;
+    background-color: #0075b4;
+}
 }
