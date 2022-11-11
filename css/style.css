@@ -69,30 +69,40 @@ footer, header, hgroup, menu, nav, section {
     padding: 30px;
 }
 .lc-container-0 .lc-img img{
-    width: 70%;
+    width: 80%;
 }
 
 .lc-container-0 .lc-container{
     width: 50%;
-    color: #586d81;
+    color: #080808; /* cor anterior: #586d81 */
 }
 
 .lc-container-0 .lc-container h1{
     margin-top: 30px;
     font-size: 3rem;
-
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    text-align: center;
 }
 .lc-container-0 .lc-container p{
     margin-top: 30px;
-    font-size: 1.1rem;
+    font-size: 1.4rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+.carousel-item{
+    width: 12.5cm;
+    height:13cm ;
 }
 
 /*.....box2.box2.....*/
 
-.carousel-item{
-    width: 10cm;
-    height:10cm ;
+.lc-box2{
+    display: flex;
+    background-color: #f2f5f8;
+   
 }
+
 
 .lc-box2-1{
     display: flex;
@@ -105,11 +115,10 @@ footer, header, hgroup, menu, nav, section {
 
 .lc-box2-1 .lc-img2{
     width: 50%;
-    padding: 60px;
+    padding: 40px;
 }
 .lc-box2-1 .lc-img2 img{
-    width: 350px;
-    height: 350px;
+    width: 80%;
 }
 
 .lc-box2-1 .lc-container2{
@@ -148,49 +157,47 @@ footer, header, hgroup, menu, nav, section {
 
 }
 
-
-/*...............TABELA DE PREÇOS..........TABELA DE PREÇOS.....*/
-
-.center-tab{
+.center{
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin: 3cm;
-    padding-top: 5px;
-    
+    background: linear-gradient(45deg, #89c3e4,#6edcf9,#83c2dd7e, #b3d0e4, #b3d0e4,) ;
+    background-size: 300% 300%;
+    animation: colors 10s ease infinite;
 }
+/*...............TABELA DE PREÇOS..........TABELA DE PREÇOS.....*/
 
 #as{
+    text-align: center;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 4rem;
-    padding: 70px;
-   
+    padding-top: 50px;
+    
 }
 .lc-container3{
     display: flex;
     flex-wrap: wrap;
+    margin: auto;
     align-items: center;
-    padding: 0px;
-
+    padding: 50px;
 }
 .lc-conteúdo{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     width: 250px;
-    height: 340px;
     background: rgb(0, 0, 0);
     border-radius: 20px;
-    margin:20px 10px;
+    margin:10px;
     float: left;
+    margin-top: 20%;
     text-align: center;
 }
 .lc-preço{
-    
-    
+    width: 120px;
+    height: 120px;
+    margin: 5% auto 0 auto;
+    text-align: center;
 }
 .lc-Detalhes{
-    margin-top: 30px;
+    margin-top: -50px;
 
 }
 
@@ -200,7 +207,6 @@ footer, header, hgroup, menu, nav, section {
     line-height: 5px;
     text-transform: uppercase;
     margin: 1cm;
-    
 }
 .lc-preço h2{
     font-size: 40px;

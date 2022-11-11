@@ -55,6 +55,22 @@ html{
 .m-planos-prod{
     height: 100vh;
 }
+
+.card-title{
+    text-align: center;
+
+}
+
+.card-price{
+    text-align: center;
+    font-weight: normal;
+}
+
+.card-text{
+    text-align: center;
+
+}
+
 .m-card-plano{
     border-radius: 5px;
     box-shadow: 7px 7px 13px 0px rgba(50, 50, 50, 0.22);
@@ -71,8 +87,10 @@ html{
   }
 
 .cor-botao{
+    display: flex;
     color: white;
     background-color: darkred;
+    justify-content: center;
 }
 
 .card-posicao-imagem{
