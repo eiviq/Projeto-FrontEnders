@@ -178,10 +178,14 @@ html{
 
 /*Página do Produto*/
 
-.m-prod-container-principal{
-    height: 200vh;
-    background-color: white;
+#titulo-subtitulo{
+    font-family: 'Roboto Mono', monospace;
+    padding-top: 100px;
+    font-weight: bolder;
+    color: #0074b4;
+    text-align: center;
 }
+
 
 .m-jumbo{
     font-family: 'Roboto Mono', monospace;
@@ -193,6 +197,12 @@ html{
     height: 100vh;
     
 }
+
+.m-planos-prod{
+    height: 100vh;
+}
+
+
 
 .m-title-pgprod{
     font-weight: bolder;
@@ -280,9 +290,14 @@ html{
     }
     
     .m-prod-container-principal{
-        height: 300vh;
+        height: 340vh;
         background-color: white;
     }
+
+    #titulo-subtitulo{
+        padding-top: 20px;
+    }
+
 }
 
 /* Small devices (landscape phones, 576px and up)*/
@@ -331,7 +346,7 @@ html{
     }
     
     .m-prod-container-principal{
-        height: 230vh;
+        height: 370vh;
         background-color: white;
     }
 
@@ -340,11 +355,24 @@ html{
 /* Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) and (max-width: 991.98px) {
 
+    .m-prod-container-principal{
+        height: 300vh;
+        background-color: white;
+    }
+
+    .m-card-plano{
+        max-height: 30rem;
+    }
+
 }
 
 /*Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) and (max-width: 1199.98px) {
 
+    .m-prod-container-principal{
+        height: 300vh;
+        background-color: white;
+    }
 
     .m-card-plano{
         max-height: 30rem;
@@ -360,7 +388,11 @@ html{
     }
 
     .m-prod-container-principal{
-        height: 190vh;
+        height: 210vh;
         background-color: white;
+    }
+
+    #titulo-subtitulo{
+        padding-top: 0px;
     }
 }
