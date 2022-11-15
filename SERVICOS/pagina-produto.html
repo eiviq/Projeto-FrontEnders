@@ -75,7 +75,7 @@
 
     <section class="row justify-content-center m-planos-prod">
 
-      <article class="card m-card-plano card-largura p-0 m-4 col-md-4 col-12 col-xl-4">
+      <article class="card m-card-plano card-largura p-0 m-4 col-md-6 col-12 col-xl-4">
         <img src="Imagens/pgprodutos/planofree.gif" class="card-posicao-imagem card-img-top" alt="alt="tigela com salada de abacate, vista superior"">
         <div class="card-body">
           <h5 class="card-title">Plano Free</h5>
@@ -85,11 +85,11 @@
           <br>
           <br>  
           <br>
-          <a href="#" class="btn cor-botao">Assine aqui!</a>
+          <a href="#" class="btn cor-botao" data-toggle="modal" data-target="#exampleModalCenter">Assine aqui!</a>
         </div>
       </article>
       
-      <article class="card m-card-plano card-largura p-0 m-4 col-md-4 col-12 col-xl-4">
+      <article class="card m-card-plano card-largura p-0 m-4 col-md-6 col-12 col-xl-4">
         <img src="Imagens/pgprodutos/planobasico.gif" class="card-posicao-imagem card-img-top" alt="tigela de mingau com kiwi, vista superior"">
         <div class="card-body">
           <h5 class="card-title">Plano Básico </h5>
@@ -98,27 +98,48 @@
           <br>
           ✔️ Auxílio direto de nossa equipe de profissionais </p>
           <br>
-          <a href="#" class="btn cor-botao">Assine aqui!</a>
+          <a href="#" class="btn cor-botao" data-toggle="modal" data-target="#exampleModalCenter">Assine aqui!</a>
         </div>
       </article>
 
-      <article class="card m-card-plano card-largura p-0 m-4 col-md-4 col-12 col-xl-4">
+      <article class="card m-card-plano card-largura p-0 m-4 col-md-6 col-12 col-xl-4">
         <img class="card-posicao-imagem card-img-top" src="Imagens/pgprodutos/planopremium.gif" alt="prato com mix de vegetais e mão de pessoa adicionando azeite, vista superior">
         <div class="card-body">
           <h5 class="card-title">Plano Premium</h5>
           <h6 class="card-price">R$ 00,00/mês</h6>
-          <p class="card-text">✔️ Avaliação e Feedback 
+          <p class="card-text">
+          ✔️ Avaliação e Feedback 
           <br>
           ✔️ Mentoria FrontEnders 
           <br>
           ✔️ Suporte 24hs 
           <br>
           ✔️ Desconto em plataformas parceiras</p>
-          <a href="#" class="btn cor-botao">Assine aqui!</a>
+          <a href="#" class="btn cor-botao" data-toggle="modal" data-target="#exampleModalCenter">Assine aqui!</a>
         </div>
       </article>
 
     </section>
+
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalCenterTitle">Deseja prosseguir?</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            Não possui cadastro ainda? <a href="../CADASTRO/cadastro.html">Faça aqui seu cadastro!</a> <br>
+            Já possui cadastro? <a href="../LOGIN/login.html">Faça seu login!</a>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
   </main>
 
