@@ -18,6 +18,28 @@
   <summary><h3>🌐 Finalidade e descrição do produto:</h3></summary>
       <p align="justify">
      <h5> Aqui estaremos desenvolvendo um projeto para a empresa FrontEnders, chamado Solution HIT. Nossa proposta é a criação de um produto que auxilie no dia a dia com a programação, e no desenvolvimento de projetos, visando facilitar a vida do programador. Nele, você precisa apenas compartilhar conosco o link de seu projeto, que retornaremos com um feedback apontando os acertos e dando dicas sobre o que ainda pode ser melhorado. Trabalhamos com três modelos de planos: free, básico, e premium. Cada um fornece suas vantagens e benefícios exclusivos. Para a criação, utilizamos ferramentas que nos permitem a validação de e-mail e CEP (através da API), e criamos a oportunidade do usuário entrar em contato conosco através de um formulário. A responsividade foi feita através do media screen e bootstrap, e também utilizamos Javascript. </h5> <br>
+  
+ <img align="center" alt="HTML" height="330" width="480" src="https://live.staticflickr.com/65535/52503982238_36794e8a2f_k.jpg">    
+ <img align="center" alt="HTML" height="330" width="480" src="https://live.staticflickr.com/65535/52503431546_3d1a644484_k.jpg">
+  <br>
+  <br>
+ <img align="center" alt="HTML" height="330" width="480" src="https://live.staticflickr.com/65535/52503431541_974456f2d0_k.jpg">
+ <img align="center" alt="HTML" height="330" width="480" src="https://live.staticflickr.com/65535/52503982188_8bedaaae55_k.jpg">
+  <br>
+  <br>
+   <img align="center" alt="HTML" height="330" width="480" src="https://live.staticflickr.com/65535/52503905020_3006663b4d_k.jpg">
+  <br>
+  <br>
+ <img align="center" alt="HTML" height="330" width="480" src="https://live.staticflickr.com/65535/52503982158_e40a014409_k.jpg">
+  <br>
+  <br>
+   <img align="center" alt="HTML" height="330" width="480" src="https://live.staticflickr.com/65535/52503904975_12debdfdd8_h.jpg">
+ <img align="center" alt="HTML" height="330" width="500" src="https://live.staticflickr.com/65535/52503447476_5747761269_h.jpg">
+
+
+
+
+
   </details>
      <h3> 🛠️ Ferramentas utilizadas na criação do projeto:</h3>
     <p align="justify">
