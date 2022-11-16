@@ -244,6 +244,7 @@ html{
 }
 
 
+
 /*Extra small devices (portrait phones, less than 576px)*/
 @media (max-width: 575.98px) {
     .logo{
@@ -290,7 +291,7 @@ html{
     }
     
     .m-prod-container-principal{
-        height: 340vh;
+        height: 320vh;
         background-color: white;
     }
 
@@ -346,7 +347,7 @@ html{
     }
     
     .m-prod-container-principal{
-        height: 370vh;
+        height: 400vh;
         background-color: white;
     }
 
@@ -356,12 +357,16 @@ html{
 @media (min-width: 768px) and (max-width: 991.98px) {
 
     .m-prod-container-principal{
-        height: 300vh;
+        height: 320vh;
         background-color: white;
     }
 
     .m-card-plano{
         max-height: 30rem;
+    }
+
+    #titulo-subtitulo{
+        padding-top: 0px;
     }
 
 }
@@ -370,7 +375,7 @@ html{
 @media (min-width: 992px) and (max-width: 1199.98px) {
 
     .m-prod-container-principal{
-        height: 300vh;
+        height: 310vh;
         background-color: white;
     }
 
@@ -388,7 +393,7 @@ html{
     }
 
     .m-prod-container-principal{
-        height: 210vh;
+        height: 230vh;
         background-color: white;
     }
 
