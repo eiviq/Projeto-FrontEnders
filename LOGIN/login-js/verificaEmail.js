@@ -16,11 +16,11 @@ function verificaEmail(campo) {
         (dominio.search(".")!=-1) && 
         (dominio.indexOf(".") >=1)&&
         (dominio.lastIndexOf(".") < dominio.length - 1)) {
-    document.getElementById("emailMsg").innerHTML="<font color='green'>E-mail válido! </font>";
+    document.getElementById("emailMsg").innerHTML="<font color='green'>E-mail válido </font>";
     botaoEmail.disabled = false;
     }
     else{
-    document.getElementById("emailMsg").innerHTML="<font color='red'>E-mail inválido! </font>";
+    document.getElementById("emailMsg").innerHTML="<font color='red'>E-mail inválido </font>";
     botaoEmail.disabled = true;
     }
 }
