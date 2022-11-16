@@ -1,21 +1,19 @@
 let botaoEmail = document.getElementById('botao-email');
 botaoEmail.disabled = true;
-let controle = 2;
 
 
-function validacaoEmail(campo) {
+function verificaEmail(campo) {
+    //O método substring retorna a parte da string que está entre os index passados como parâmetro
     let usuario = campo.value.substring(0, campo.value.indexOf("@"));
     let dominio = campo.value.substring(campo.value.indexOf("@")+ 1, campo.value.length);
 
-    console.log(usuario);
-
     if ((usuario.length >=1) &&
         (dominio.length >=3) &&
-        (usuario.search("@")==-1) &&
+        (usuario.search("@")==-1) && //O método search retorna -1 caso não encontre a string que que foi passada como parâmetro
         (dominio.search("@")==-1) &&
         (usuario.search(" ")==-1) &&
         (dominio.search(" ")==-1) &&
-        (dominio.search(".")!=-1) &&
+        (dominio.search(".")!=-1) && 
         (dominio.indexOf(".") >=1)&&
         (dominio.lastIndexOf(".") < dominio.length - 1)) {
     document.getElementById("emailMsg").innerHTML="<font color='green'>E-mail válido </font>";
@@ -34,7 +32,7 @@ botaoEmail.addEventListener("click", function(e){
     let inputSenha = document.getElementById('m-input-senha').value;
 
     if(inputSenha.length > 1 && inputSenha != " "){
-        alert("Deu certo!");
+        alert("Você está logado!");
         refresh;
     }else{
         alert("Digite sua senha!")
