@@ -286,17 +286,18 @@ html{
     }
     
     .m-planos-prod{
-        height: 80vh;
-        padding-top: 40px;
+        height: 100vh;
+        padding-top: 10px;
     }
     
     .m-prod-container-principal{
-        height: 320vh;
+        height: 400vh;
         background-color: white;
     }
 
+
     #titulo-subtitulo{
-        padding-top: 20px;
+        padding-top: 50px;
     }
 
 }
